@@ -1,0 +1,10 @@
+[init]
+        defaultBranch = master
+[user]
+        email = dev@huntears.com
+        name = "Alexandre Flion"
+	signingkey = 1C64EA38F2B14BFD4F038D3AAFCE980666C15CD0
+[commit]
+        gpgsign = true
+[alias]
+        logs = log --show-signature
