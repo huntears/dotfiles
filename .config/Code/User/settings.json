@@ -1,0 +1,6 @@
+{
+    "workbench.iconTheme": "vs-nomo-dark",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "vim.smartRelativeLine": true
+}
