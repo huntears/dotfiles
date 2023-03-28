@@ -1,6 +1,12 @@
 {
-    "workbench.iconTheme": "vs-nomo-dark",
     "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "terminal.integrated.sendKeybindingsToShell": true,
-    "vim.smartRelativeLine": true
+    "vim.smartRelativeLine": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontLigatures": true,
+    "clangd.path": "/home/huntears/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
+    "workbench.iconTheme": "vs-nomo-dark"
 }
