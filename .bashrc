@@ -98,4 +98,4 @@ alias reload="source $HOME/.bashrc"
 alias epitest="docker run --rm -it -v $(pwd):/usr/src/project epitechcontent/epitest-docker /bin/bash -c \"cd /usr/src/project; exec bash\""
 alias sendhtmltoserver="rsync -r . okami-root:/root/services/huntears.com/data/html/"
 
-export MAKEFLAGS="-j8"
+export MAKEFLAGS="-j14"
