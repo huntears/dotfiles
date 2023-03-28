@@ -7,6 +7,5 @@
     },
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
-    "clangd.path": "/home/huntears/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
     "workbench.iconTheme": "vs-nomo-dark"
 }
