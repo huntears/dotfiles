@@ -99,3 +99,5 @@ alias epitest="docker run --rm -it -v $(pwd):/usr/src/project epitechcontent/epi
 alias sendhtmltoserver="rsync -r . okami-root:/root/services/huntears.com/data/html/"
 
 export MAKEFLAGS="-j14"
+
+export PATH="$PATH:$HOME/.local/bin"
