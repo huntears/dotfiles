@@ -101,3 +101,4 @@ alias sendhtmltoserver="rsync -r . okami-root:/root/services/huntears.com/data/h
 export MAKEFLAGS="-j14"
 
 export PATH="$PATH:$HOME/.local/bin"
+export PF_INFO="ascii title os host kernel uptime pkgs memory shell"
