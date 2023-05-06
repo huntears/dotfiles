@@ -7,5 +7,6 @@
     },
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
-    "workbench.iconTheme": "vs-nomo-dark"
+    "workbench.iconTheme": "vs-nomo-dark",
+    "extensions.ignoreRecommendations": true
 }
