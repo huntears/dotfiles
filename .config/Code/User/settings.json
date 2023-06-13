@@ -8,5 +8,6 @@
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
     "workbench.iconTheme": "vs-nomo-dark",
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "clangd.detectExtensionConflicts": false
 }
