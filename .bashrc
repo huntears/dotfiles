@@ -18,7 +18,7 @@ alias ls="exa"
 alias l="exa -l"
 alias ll="exa -la"
 
-PS1="\[\033[38;5;10m\]λ\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;196m\]\$?\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;12m\]\W\[$(tput sgr0)\] "
+PS1="\[\033[38;5;10m\]λ\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;196m\]\$?\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;12m\]\W\[$(tput sgr0)\] \e[m"
 alias h="echo h"
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias reload="source $HOME/.bashrc"
@@ -45,3 +45,5 @@ esac
 # pnpm end
 
 source /home/huntears/.ghcup/env
+
+export GPG_TTY=$(tty)
