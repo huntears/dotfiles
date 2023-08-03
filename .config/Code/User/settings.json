@@ -9,5 +9,6 @@
     "editor.fontLigatures": true,
     "workbench.iconTheme": "vs-nomo-dark",
     "extensions.ignoreRecommendations": true,
-    "clangd.detectExtensionConflicts": false
+    "clangd.detectExtensionConflicts": false,
+    "editor.formatOnSave": true
 }

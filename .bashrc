@@ -43,3 +43,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+source /home/huntears/.ghcup/env
