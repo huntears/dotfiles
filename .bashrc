@@ -44,6 +44,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-source /home/huntears/.ghcup/env
+[ -s /home/huntears/.ghcup/env ] && source /home/huntears/.ghcup/env
 
 export GPG_TTY=$(tty)
