@@ -12,7 +12,7 @@
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 
-. "$HOME/.cargo/env"
+[ -s $HOME/.cargo/env ] && source $HOME/.cargo/env
 
 alias ls="exa"
 alias l="exa -l"
@@ -30,6 +30,7 @@ alias perfrec="perf record -g"
 export MAKEFLAGS="-j14"
 
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 export PF_INFO="ascii title os host kernel uptime pkgs memory shell"
 
 export NVM_DIR="$HOME/.nvm"
@@ -44,6 +45,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-[ -s /home/huntears/.ghcup/env ] && source /home/huntears/.ghcup/env
+[ -s $HOME/.ghcup/env ] && source $HOME/.ghcup/env
 
 export GPG_TTY=$(tty)
