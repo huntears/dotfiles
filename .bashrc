@@ -48,3 +48,7 @@ esac
 [ -s $HOME/.ghcup/env ] && source $HOME/.ghcup/env
 
 export GPG_TTY=$(tty)
+
+function update() {
+    sudo bash -c "emaint -a sync && emerge -avuDN @world && eix-update"
+}
