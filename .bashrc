@@ -28,7 +28,6 @@ alias perfrep="perf report -g 'graph,0.5,caller'"
 alias perfrec="perf record -g"
 
 export MAKEFLAGS="-j14"
-export EDITOR="vi"
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
