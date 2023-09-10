@@ -26,6 +26,7 @@ alias epitest="docker run --rm -it -v $(pwd):/usr/src/project epitechcontent/epi
 alias sendhtmltoserver="rsync -r . okami-root:/root/services/huntears.com/data/html/"
 alias perfrep="perf report -g 'graph,0.5,caller'"
 alias perfrec="perf record -g"
+alias build="make --directory build"
 
 export MAKEFLAGS="-j14"
 
@@ -53,3 +54,7 @@ function update() {
     sudo bash -c "emaint -a sync && emerge -avuDN @world && eix-update"
 }
 
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
