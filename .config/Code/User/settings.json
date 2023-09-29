@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "workbench.colorTheme": "Catppuccin Macchiato",
     "terminal.integrated.sendKeybindingsToShell": true,
     "vim.smartRelativeLine": true,
     "[python]": {
@@ -7,8 +7,21 @@
     },
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
-    "workbench.iconTheme": "vs-nomo-dark",
+    "workbench.iconTheme": "catppuccin-macchiato",
     "extensions.ignoreRecommendations": true,
     "clangd.detectExtensionConflicts": false,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        80,
+        120,
+        160
+    ],
+    "zig.zigPath": "",
+    "zig.zls.enabled": true,
+    "zig.zls.path": "/home/huntears/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+    "workbench.editorAssociations": {
+        "*.db": "sqlite-viewer.option"
+    },
+    "window.zoomLevel": 1,
+    "window.menuBarVisibility": "toggle"
 }
