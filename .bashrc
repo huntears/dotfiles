@@ -33,6 +33,8 @@ alias perfrep="perf report -g 'graph,0.5,caller'"
 alias perfrec="perf record -g"
 # Quick alias for when I am lazy in vim
 alias build="make --directory build"
+# Removes all local git branches that are not on the remote, you may want to call `git remote prune origin` before
+alias git-remove-untracked='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}" | xargs git branch -d'
 
 # Make go brrrrrrrr (You definetely want to change this if your pc doesn't have 16 cores and 32GB of RAM)
 export MAKEFLAGS="-j14"
