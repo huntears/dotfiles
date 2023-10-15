@@ -10,3 +10,4 @@
 [alias]
         logs = log --show-signature
         fuckit = reset --hard
+        plog = log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --stat
