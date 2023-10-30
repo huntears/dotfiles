@@ -23,5 +23,19 @@
         "*.db": "sqlite-viewer.option"
     },
     "window.zoomLevel": 1,
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "explorer.confirmDelete": false,
+    "svelte.enable-ts-plugin": true,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/*.d": true,
+        "**/*.gcda": true,
+        "**/*.gcno": true,
+        "**/*.o": true
+    },
+    "epitech-c-cpp-headers.username": "",
+    "epitech-c-cpp-headers.login": "",
+    "epitech-c-cpp-headers.headerType": "post2017",
+    "epitech-c-cpp-headers.usePragmaOnce": false,
+    "epitech-c-cpp-headers.autoGenerateClasses": false
 }
