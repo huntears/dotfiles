@@ -9,7 +9,6 @@
     "editor.fontLigatures": true,
     "workbench.iconTheme": "catppuccin-macchiato",
     "extensions.ignoreRecommendations": true,
-    "clangd.detectExtensionConflicts": false,
     "editor.formatOnSave": true,
     "editor.rulers": [
         80,
@@ -22,7 +21,6 @@
     "workbench.editorAssociations": {
         "*.db": "sqlite-viewer.option"
     },
-    "window.zoomLevel": 1,
     "window.menuBarVisibility": "toggle",
     "explorer.confirmDelete": false,
     "svelte.enable-ts-plugin": true,
@@ -31,11 +29,41 @@
         "**/*.d": true,
         "**/*.gcda": true,
         "**/*.gcno": true,
-        "**/*.o": true
+        "**/*.o": true,
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*notifications/": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*plugins/": true
     },
     "epitech-c-cpp-headers.username": "",
     "epitech-c-cpp-headers.login": "",
     "epitech-c-cpp-headers.headerType": "post2017",
     "epitech-c-cpp-headers.usePragmaOnce": false,
-    "epitech-c-cpp-headers.autoGenerateClasses": false
+    "epitech-c-cpp-headers.autoGenerateClasses": false,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "files.watcherExclude": {
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*notifications/": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*plugins/": true
+    },
+    "editor.defaultFormatter": "xaver.clang-format",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "telemetry.telemetryLevel": "off",
+    "gitlens.telemetry.enabled": false,
+    "haskell.manageHLS": "GHCup",
+    "git.autofetch": true,
+    "[groovy]": {
+        "editor.defaultFormatter": "NicolasVuillamy.vscode-groovy-lint"
+    },
+    "audioCues.terminalCommandFailed": "on",
+    "mesonbuild.downloadLanguageServer": true,
+    "zig.path": "",
+    "zig.initialSetupDone": true,
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": 1
 }
