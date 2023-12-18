@@ -8,7 +8,7 @@
 [[ -z "$FUNCNEST" ]] && export FUNCNEST=100          # limits recursive functions, see 'man bash'
 
 # Sets the prompt, this is absolutely horrendous but someday I'll just update it
-PS1="\[\033[38;5;10m\]λ\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;196m\]\$?\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;12m\]\W\[$(tput sgr0)\] \e[m"
+# PS1="\[\033[38;5;10m\]λ\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;196m\]\$?\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;12m\]\W\[$(tput sgr0)\] \e[m"
 
 ## Use the up and down arrow keys for finding a command in history
 ## (you can write some initial letters of the command first).
@@ -36,6 +36,10 @@ alias build="make --directory build"
 # Removes all local git branches that are not on the remote, you may want to call `git remote prune origin` before
 alias git-remove-untracked='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}" | xargs git branch -d'
 alias time="$(which time) -f '\t%E real,\t%U user,\t%S sys,\t%K amem,\t%M mmem'"
+
+function update_rustpkgs() {
+    cat ~/.cargo/.crates2.json | jq -r '.installs | keys[] | split(" ")[0]' | xargs cargo install
+}
 
 # Make go brrrrrrrr (You definetely want to change this if your pc doesn't have 16 cores and 32GB of RAM)
 export MAKEFLAGS="-j14"
