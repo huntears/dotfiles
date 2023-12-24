@@ -7,8 +7,11 @@
 
 [[ -z "$FUNCNEST" ]] && export FUNCNEST=100          # limits recursive functions, see 'man bash'
 
-# Sets the prompt, this is absolutely horrendous but someday I'll just update it
-# PS1="\[\033[38;5;10m\]λ\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;196m\]\$?\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;12m\]\W\[$(tput sgr0)\] \e[m"
+# Sets the prompt
+# Literally the default from gentoo
+# Taken from: https://gitweb.gentoo.org/repo/gentoo.git/tree/app-shells/bash/files/bashrc
+# Just changed it so that it shows the full hostname (Distrobox for example)
+PS1="\[\033[01;32m\]\u@\H\[\033[01;34m\] \w \$\[\033[00m\] "
 
 ## Use the up and down arrow keys for finding a command in history
 ## (you can write some initial letters of the command first).
@@ -87,3 +90,6 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
 
 export PATH=$PATH:$HOME/go/bin
+
+export EDITOR=vim
+export VISUAL=vim
