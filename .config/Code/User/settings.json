@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "terminal.integrated.sendKeybindingsToShell": true,
     "vim.smartRelativeLine": true,
     "[python]": {
