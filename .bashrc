@@ -93,3 +93,12 @@ export PATH=$PATH:$HOME/go/bin
 
 export EDITOR=vim
 export VISUAL=vim
+
+# Temporary, this will be moved elsewhere
+. $HOME/programs/cloned/bash-wakatime/bash-wakatime.sh
+
+alias wttr="curl https://wttr.in/toulouse"
+
+# THIS NEEDS TO BE LAUNCHED FROM THE HOME DIRECTORY WHILE THE BACKUP DRIVE IS MOUNTED ON ~/backups
+# IT IS VERY BADLY DONE!
+alias backup_everything="restic --repo backups/ backup . --exclude .cache --exclude backups --exclude .local --exclude .rustup --exclude .var --exclude .debug --exclude .cargo"
