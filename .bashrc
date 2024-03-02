@@ -68,7 +68,7 @@ esac
 # pnpm end
 
 # Haskell version managere
-[ -s $HOME/.ghcup/env ] && source $HOME/.ghcup/env
+export PATH="$PATH:$HOME/.ghcup/bin"
 
 # gpg signing in terminal without a secrets manager
 export GPG_TTY=$(tty)
