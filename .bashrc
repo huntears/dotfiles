@@ -101,4 +101,4 @@ alias wttr="curl https://wttr.in/toulouse"
 
 # THIS NEEDS TO BE LAUNCHED FROM THE HOME DIRECTORY WHILE THE BACKUP DRIVE IS MOUNTED ON ~/backups
 # IT IS VERY BADLY DONE!
-alias backup_everything="restic --repo backups/ backup . --exclude .cache --exclude backups --exclude .local --exclude .rustup --exclude .var --exclude .debug --exclude .cargo"
+alias backup_everything="restic --repo backups/ backup . --exclude .cache --exclude .mozilla --exclude .ghcup --exclude backups --exclude .local --exclude .rustup --exclude .var --exclude .debug --exclude .cargo --exclude .pnpm-store"
