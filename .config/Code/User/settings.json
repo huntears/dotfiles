@@ -7,7 +7,7 @@
     },
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
-    "workbench.iconTheme": "catppuccin-macchiato",
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
     "extensions.ignoreRecommendations": true,
     "editor.formatOnSave": true,
     "editor.rulers": [
