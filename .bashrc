@@ -22,9 +22,9 @@ bind '"\e[B":history-search-forward'
 [ -s $HOME/.cargo/env ] && source $HOME/.cargo/env
 
 # tbh I only use eza because the colours look good, if there is an alternative I will switch
-alias ls="eza --git --git-ignore"
-alias l="eza -lh --git --git-ignore"
-alias ll="eza -lah --git -M"
+alias ls="ls --color"
+alias l="ls --color -lh"
+alias ll="ls --color -lah"
 
 alias h="echo h"
 # Quick source alias when I change something in my config
